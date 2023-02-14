@@ -1,0 +1,44 @@
+body {
+    background-color: #375A66;
+    color: #ffffff9a;
+    line-height: 1.4em;
+}
+
+h1 {
+    text-align: center;
+    margin: auto;
+    padding: 2em;
+    line-height: 2em;
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 1em;
+    font-weight: 900;
+    letter-spacing: 0.2rem;
+}
+
+
+ol li {
+    padding-bottom: 1.5em;
+}
+
+.section {
+    width: 55%;
+    margin: auto;
+    padding: 1.2em;
+    border: solid;
+    border-radius: 25px;
+    margin-bottom: 2em;
+}
+
+.sources {
+    width: fit-content;
+    border: solid;
+    border-radius: 25px;
+    margin: auto;
+    text-align: center;
+    padding: 0 5% 5% 5%;
+    background-color: #ffffff9a;
+    color: #375A66;
+}
