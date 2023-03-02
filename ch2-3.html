@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Chapter 2 & 3</title>
+    <style>
+        main {
+            width: 65%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        body {
+            background-color: #375A66;
+            color: #ffffff9a;
+            line-height: 1.4em;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 1em;
+        }
+
+        img {
+            height: 300px;
+            width: auto;
+            border-radius: 10%;
+        }
+
+        li {
+            font-size: 14pt;
+        }
+        
+        .section1 {
+            background-color: #605064;
+            padding: 2em;
+            border-radius: 10%;
+            margin-bottom: 1em;
+        }
+
+        .section1 li {
+            padding: 1em;
+        }
+
+        .section2 {
+            background-color: #907159;
+            padding: 2em;
+            border-radius: 10%;
+            margin-bottom: 1em;
+        }
+
+        .section3 {
+            background-color: #2b6034;
+            padding: 2em;
+            border-radius: 10%;
+        }
+
+        .blur {
+            margin-right: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Chapter 2: Algorithm Discovery and Design</h1>
+    <h1>Chapter 3: The Efficiency of Algorithms</h1>
+    <h1>Student: Constantinos Vassalos</h1>
+
+<main>
+    <div class="section1">
+    <ol>
+        <li>Explain why natural language is not an effective tool for describing algorithms.<br>
+            Natural language is too nuanced, and involves too much subjectivity for a computer to understand. A word can have multiple meanings and be used
+            in many different ways, and a computer is not capable of this kind of logic. A computer needs regular, straightford, semantic syntax that is 
+            used the same way every time.
+
+        <li>Problem 1: <br> A student has three grades; the final grade is the average of the the three. List the 
+            algorithmic steps to find the final grade.<br>
+            Step 1: Add the three grades together.<br>
+            Step 2: Divide the sum of the grades by three.<br>
+            Resulting calculation gives the average of the three grades.
+
+        <li>
+            Problem 2: <br> A car owner recorded the car's previous car mileage, current mileage, and the number of gallons of gas the owner filled their
+            tank with. List the algorithmic steps to find the car's mpg (miles per gallon). <br>
+
+            Step 1: Subtract the current mileage from the previous car mileage.<br>
+            Step 2: Take resulting value and divide by the number of gallons of gas the owner filled the tank with.<br>
+            Resulting calculations gives you the MPG.
+        </li>
+    </ol>
+    </div>
+
+    <div class="section2">
+    <h2>Chapter 2: Briefly define:</h2>
+
+    <ol>
+        <li>natural language - the language we speak and read in everyday life</li>
+        <li>pseudocode - an informal way of writing code for an algorithm. Meant for the coder to understand and not the computer.</li>
+        <li>sequential operation (straight-line algorithm) - an algorithm that executes from top to bottom, straight through</li>
+        <li>input - providing code with data values from the outside world to be used in the computations</li>
+        <li>output - the computer sending the resulting computations to the outside world</li>
+        <li>conditional statement - operations that ask a true or false questionto determine which path through the algorithm to take</li>
+        <li>boolean condition - an expression that evaluates to either "true" or "false"</li>
+        <li>algorithmic discovery process - finding the solution to a given problem</li>
+    </ol>
+
+    <h2>Chapter 3: Briefly describe of define:</h2>
+    <ol>
+        <li>why algorithms should be correct - an algorithm, no matter how elegant or efficient, if wrong, is completely useless</li>
+        <li>why algorithms should be efficient - while modern computers have a lot more computing power, it is still good practice to carefully 
+            use the computing resources at hand
+        </li>
+        <li>program maintenance - a program must be maintained after repeated use, to fix errors uncovered through user, or to expand the
+            program's functionality.
+        </li>
+        <li>importance of algorithm: ease of understanding - if an algorithm is not well commented, or well written, any changes or fixes that may
+            need to be made are made substantially harder and take longer because the programmer has to figure out how everything works first. 
+            "Spaghetti code" is a term used for algorithms that are very hard to understand.
+        </li>
+        <li>algorithmic elegance - the algorithmic equivalent of style</li>
+        <li>sequential search algorithm - an algorithm that searched through every item in a list, until it finds the desired outcome</li>
+        <li>order of magnitude - this is how a computer scientist measures the efficiency of a program</li>
+        <li>selection sort - this is a type of algorithm that sorts through a list of items</li>
+        <li>flop (floating point operation) - a unit measuring how many arithmetic operations a computer can do in one second</li>
+        <li>teraflop - 16 trillion floating-point operations per second</li>
+        <li>petraflop - 93 quadrillion floating-point operations per second</li>
+        <li>parallel processor - computing where many computations are taking place at the same time. </li>
+        <li>data cleanup problem - this is an issue where you need to potentially remove data declared in the code before making calculations</li>
+        <li>binary search algorithm - a search algorithm that is more efficient, but only works if the list is already sorted. It starts in the middle
+            of the list and searches up or down based on if the value is greater than or less than the value being searched.
+        </li>
+        <li>pattern matching - an algortihm to searches for a specific string in text</li>
+    </ol>
+    </div>
+
+    <div class="section3">
+    <h2>Carl Friedrich Gauss</h2>
+    <img src="gauss.jpg" alt="Karl Friederich Gauss">
+    <p>Carl Friederich Gauss was a brilliant German mathematician and physicist who made many great contributions to many scientific fields, he was sometimes
+        referred to as <i>"Princeps mathematicorum"</i>, which is Latin for "the foremost of mathematicians". There is a famour story about Gauss, involving him
+    as a student in school. The instructor asked all the students to figure out the sum of number 1 through 100 in an attempt to keep the students quiet for a while.
+    Gauss ruined this plan by responded quickly that the sum is 5,050. He figured it out not by doing the arithmetic, but by figuring out that if you "fold" the numbers
+    (1 + 100, 99 + 2, etc) they would each add up to 101, and 50 pairs of 101 is 5,050. A brilliant way for a child, or really any one at the time, to solve this problem.
+    Gaussian optics is one of Gauss' many contributions to the scientific world. It is a framework to describe optical phenomena. The Gaussian blur, named after Carl
+    Fredrick Gauss, uses a mathematical function to blur a picture
+        </p>
+        
+
+    <img class="blur" src="gaussian1.jpg" alt="Picturesque landscape">
+    <img class="blur" src="gaussian2.jpg" alt="Picturesque landscape with Gaussian Blur">
+
+
+    <h3>Sources</h3>
+    <ul>
+        <li><a href="https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss">https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss</a></li>
+        <li><a href="https://www.americanscientist.org/article/gausss-day-of-reckoning">https://www.americanscientist.org/article/gausss-day-of-reckoning</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Gaussian_optics">https://en.wikipedia.org/wiki/Gaussian_optics</a></li>
+        <li><a href="https://www.rp-photonics.com/gaussian_optics.html">https://www.rp-photonics.com/gaussian_optics.html</a></li>
+        <li><a href="https://www.adobe.com/creativecloud/photography/discover/gaussian-blur.html">https://www.adobe.com/creativecloud/photography/discover/gaussian-blur.html</a></li>
+        <li><a href="https://aryamansharda.medium.com/image-filters-gaussian-blur-eb36db6781b1">https://aryamansharda.medium.com/image-filters-gaussian-blur-eb36db6781b1</a></li>
+
+    </ul>
+    </div>
+</main>
+</body>
+
+
+</html>
