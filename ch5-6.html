@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Chapter 5-6</title>
+    <style>
+        body {
+            background-color: #4F5852;
+            color: #919B94;
+            line-height: 1.4em;
+            font-family: 'Trebuchet MS', 'Arial', sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            margin: auto;
+            padding: 2em;
+            line-height: 2em;
+            border-bottom: solid #919B94;
+        }
+
+        h2 {
+            text-align: center;
+            padding-bottom: 1em;
+            font-weight: 900;
+            letter-spacing: 0.2rem;
+        }
+
+        table {
+            margin-top: 2em;
+            margin-left: auto;
+            margin-right: auto;
+            width: 55%;
+            border: solid #919B94;
+        }
+
+        td, th{
+            padding: 0.5em;
+            text-align: left;
+        }
+
+
+        ol li {
+            padding-bottom: 1.5em;
+        }
+
+        .section {
+            width: 55%;
+            margin: auto;
+            padding: 1.2em;
+            border-left: solid;
+            border-right: solid;
+        }
+
+        .line-divider {
+            width: 100%;
+            border-top: dotted 1.5em black;
+            margin-top: 4em;
+            margin-bottom: 4em;
+        }
+
+        .sources {
+            width: fit-content;
+            border: solid;
+            border-radius: 25px;
+            margin: auto;
+            text-align: center;
+            padding: 0 5% 5% 5%;
+            background-color: #ffffff9a;
+            color: #375A66;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Chapter 5: Computer Systems Organization <br>Student: Constantinos Vassalos</h1>
+    <div class="section">
+    <h2>Von Neumann computer architecture, 4 major subsystems</h2>
+    <ol>
+        <li>memory</li>
+        <li>input/output</li>
+        <li>arithmetic/logic unit (ALU)</li>
+        <li>control unit</li>
+    </ol>
+    <br>
+    </div>
+
+    <div class="line-divider"></div>
+
+    <div class="section">
+    <h2>Von Neumann computer architecture, 3 characteristcs:</h2>
+    <ol>
+        <li>There are four subsystems that work together.</li>
+        <li>Instructions on what to be done are stored in memory in binary, also known as the "stored program" concept.</li>
+        <li>One instruction at a time is sent to the CPU to be decoded and executed, also known as the "sequential execution of instructions".</li>
+    </ol>
+    </div>
+
+    <div class="line-divider"></div>
+
+    <div class="section">
+    <h2>Computer Architecture Terms</h2>
+    <ol>
+        <li>RAM - memory is stored here cells, each with a unique address, in binary to be decoded and executed</li>
+        <li>cache - smaller, but faster than RAM, this is were data based on the "Principle of locality" is sent to from the RAM before being processed in order to get maximum speed out of the computer</li>
+        <li>Principle of locality: The high likelihood that when a program fetches a piece of data or an instruction:</li>
+            <ol>
+                <li>It will access that same instruction or piece of data in the very near future.</li>
+                <li>It will soon access the instructions or data that are located near that piece of data, where "near" means an address whose numerical value is close to this one.</li>
+            </ol>
+        <li>ROM - a specific type of RAM where the data stored in the memory is recorded during production and can not be modified or removed, often used to hold important system instructions`</li>
+        <li>memory cell size - RAM is made up of multiple memory cell, and each cell has a specfic size measured in bits</li>
+        <li>memory cell address - this is the unique identifier of a cell in the RAM where data is stored </li>
+        <li>maximum memory size - the maximum number of bits that can be stored in a memory cell. Commonly was 32 bit, but in modern computers, 64 bit is the standard</li>
+        <li>register - a storage cell that is specified to hold the operands of arithmetic operations, as well as the results after processing</li>
+        <li>fetch - an operation that gets data from a memory cell and puts it into the memory data register (MDR) </li>
+        <li>store - an operation that puts the data from the MDR into a memory cell</li>
+        <li>memory access time - the time to carry out a fetch or store operation</li>
+        <li>DASD - an acronym for "direct access storage device", it is a storage device where every memory cell has a unique address, but the time to access the data varies based on multiple variables, such as 
+            physical location or current state of the device. </li>
+        <li>Arithmetic and Logic Unit (ALU) - a major subset of the Von Neumann computer architecture, this unit handles mathematic and logical operations. In most systems it has been integrated with the control unit into the CPU of a computer</li>
+        <li>Control Unit - has control of other units to perform three tasks repeatedly: fetch, decode, execute</li>
+    </ol>
+    </div>
+
+    <div class="line-divider"></div>
+
+    <h1>Chapter 6:</h1>
+    
+    <div class="section">
+    <h2>Four things the interface between the computer and hardware does:</h2>
+    <ol>
+        <li>Hides from the user the messy details of the underlying hardware</li>
+        <li>Presents information about what is happening in a way that does not rquire in-depth knowledge of the internal structure of the system</li>
+        <li>Allows easy user access to the resources available on this computer</li>
+        <li>Prevents accidental or intentional damage to hardware, programs, and data</li>
+    </ol>
+    </div>
+
+    <div class="line-divider"></div>
+
+    <div class="section">
+        <h2>Responsibilities of systems software:</h2>
+        <ol>
+            <li>Hides the complex and unimportant (to the user) details of the internal structure of the Von Neumann architecture</li>
+            <li>Presents important information to the user in a way that is easy to understand</li>
+            <li>Allows the user to access machine resources in a simple and efficient way</li>
+            <li>Provides a secure and safe environment in which to operate</li>
+        </ol>
+    </div>
+
+    <div class="line-divider"></div>
+
+    <div class="section">
+    <h2>Terms:</h2>
+    <ol>
+        <li>systems software - a collection of computer programs that manage the resources of a computer and facilitates access to those resources</li>
+        <li>user interface - the graphical user interface (GUI) provides an easy to understand visual overview of the computers functions and capabilities</li>
+        <li>language services - programs that allow the user to write programs in high-level language (like english) instead of machine code. Some of these programs are assemblers, compilers, and interpreters</li>
+        <li>memory managers - these are programs that allocate memory for programs</li>
+        <li>information managers - programs that handle organization, storage, and retrieval of information</li>
+        <li>i/o managers - software packages that make input and output devices compatible with the computer</li>
+        <li>scheduler - a system program that keeps a list of programs for the processor to run, enabling the computer to run multiple programs at once</li>
+        <li>utilities - collection of libraries providing services to the user and the system routines. Some examples are: text editors, online help routines, image and sound applications, and control panels</li>
+        <li>assembly language - one of the first non-machine languages created, it created a more productive and user-oriented environment</li>
+    </ol>
+    </div>
+
+    <div class="line-divider"></div>
+
+    <div class="section">
+        <h2>Functions of an Operating System</h2>
+        <ol>
+            <li>User interface management</li>
+            <li>Control of access to the system and to data files</li>
+            <li>Program scheduling and activation</li>
+            <li>Efficient resource allocation</li>
+            <li>Deadlock detection and error detection</li>
+        </ol>
+    </div>
+
+    <div class="line-divider"></div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Quantity in Bytes</th>
+                <th>Base-10 Value</th>
+                <th>Amount of Textual Information</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>1 byte</td>
+            <td>10^0</td>
+            <td>One character</td>
+        </tr>
+        <tr>
+            <td>1 kilobyte</td>
+            <td>10^3</td>
+            <td>One typed page</td>
+        </tr>
+        <tr>
+            <td>1 megabyte</td>
+            <td>10^6</td>
+            <td>Two or three novels</td>
+        </tr>
+        <tr>
+            <td>1 gigabyte</td>
+            <td>10^9</td>
+            <td>A department library or a large personal library</td>
+        </tr>
+        <tr>
+            <td>1 terabyte</td>
+            <td>10^12</td>
+            <td>The library of a major academic research university</td>
+        </tr>
+        <tr>
+            <td>1 petabyte</td>
+            <td>10^15</td>
+            <td>All printed material in all libraries in North America</td>
+        </tr>
+        <tr>
+            <td>1 exabyte</td>
+            <td>10^18</td>
+            <td>All words ever printed throughout human history</td>
+        </tr>
+        <tr>
+            <td>1 zettabyte</td>
+            <td>10^21</td>
+            <td>As of 2014, the total amounto of information stored globally on the World Wide Web was about 4-5  zettabytes</td>
+        </tr>
+        <tr>
+            <td>1 yottabyte</td>
+            <td>10^24</td>
+            <td class="description">
+                According to an articlew in Gizmodo, a design and technology blog, storing 1 yottabyte of data on hard drives would require 1 million data centers that 
+                would fill the states of Rhode Island and Delaware
+            </td>
+        </tr>
+    </table>
+</body>
+
+
+
+</html>
