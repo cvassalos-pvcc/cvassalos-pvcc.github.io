@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Holiday Roma Tours</title>
+    <meta charset="UTF-8">
+    
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Times New Roman";
+        }
+
+        h1 {
+            text-align: center;
+            font-family: "Gill Sans";
+            background: #F4F9FF;
+            width: 40%;
+            display: block;
+            margin: auto;
+            padding: 1em 1em 0.5em;
+        }
+
+        body {
+            background: linear-gradient(to right, #008C45 0%, #008C45 50%, #CD212A 50%, #CD212A 100%);
+            display: block;
+            margin: auto;
+        }
+
+        main {
+            background: #F4F9FF;
+            width: 40%;
+            display: block;
+            margin: auto;
+            padding: 0.5em 1em 5em;
+        }
+
+        p {
+            width: 90%;
+            text-align: center;
+            margin: auto;
+        }
+
+        img {
+            display: block;
+            margin: auto;
+            padding-top: 2em;
+            padding-bottom: 2em;
+            height: 350px;
+            width: auto;
+        }
+
+        table, td {
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+
+        table {
+            width: 90%;
+            display: block;
+            margin: auto;
+        }
+
+        th {
+            font-style: bold;
+            font-size: 24px;
+            text-align: center;
+            padding: 0.5em 1em;
+        }
+
+        td {
+            padding: 1em;
+        }
+
+        tfoot td {
+            font-style: italic;
+            text-align: center;
+        }
+
+        .button {
+            display: block;
+            margin: 2em auto;
+            padding: 1em;
+        }
+    </style>
+
+    <script type = "text/javascript">
+        function calculate_tour() {
+            var num_people = prompt("How many people will be coming on our Roma Tour?");
+
+            var air_fare = 1200 * num_people;
+            var hotel_price = (265 * 5);
+            var meals = (75 * 5) * num_people;
+            var bus_tour = 80 * num_people;
+            var activities = 220 * num_people;
+
+            total_price = air_fare + hotel_price + meals + bus_tour + activities;
+
+            alert("\nROMA TOUR COMPANY" +
+                  "\n*********************************" +
+                  "\nNUMBER OF TRAVELERS: " + num_people +
+                  "\n*********************************" +
+                  "\nAir Fare: $" + air_fare +
+                  "\nHotel: $" + hotel_price +
+                  "\nMeals: $" + meals +
+                  "\nBus Tour: $" + bus_tour +
+                  "\nActivities: $" + activities +
+                  "\n*********************************" +
+                "\nTOTAL PRICE FOR " + num_people + " TRAVELERS:\n " + "$" + total_price);
+    }
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Holiday Roma!</h1>
+    </header>
+    <main>
+        <p>
+            Visit Rome with us! <b>Holiday Roma Tours</b> are the most exciting way to visit this ancient Italian city.
+            Stay in the luxurious <b>Hotel Farnese</b>, enjoy fabulous meals each day, and visit Rome's most renown sites
+            and museums on our <b>Hop On / Hop Off</b> buses. Your trip will also include a night of musical theater at 
+            the <b>Teatrol Sistina</b>!
+        </p>
+
+        <img src="rome.jpg" alt="pictureque view of ruins in rome" />
+
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="3">Holiday Roma Tour Rates</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>Air:</td>
+                <td>Round trip airfare from JRK to Rome</td>
+                <td>$1200</td>
+            </tr>
+            <tr>
+                <td>Hotel: </td>
+                <td>5 nights in a 4-star hotel</td>
+                <td>$265 per night</td>
+            </tr>
+            <tr>
+                <td>Meals: </td>
+                <td>Includes 5 breakfasts & 5 dinners</td>
+                <td>$75 per day</td>
+            </tr>
+            <tr>
+                <td>Bus Tour: </td>
+                <td> Hop on/Hop off bus: 3-day pass</td>
+                <td>$80</td>
+            </tr>
+            <tr>
+                <td>Activities</td> 
+                <td>Includes 1 theater performance & museum tickets</td>
+                <td>$220</td>
+            </tr>
+        <tfoot>
+            <tr>
+                <td colspan="3">VAT is included. Alcoholic beverages and tips are not included.</td>
+            </tr>
+        </tfoot>
+        </table>
+
+        <form>
+            <input type="button" value="Calculate Roma Tour Holiday Price" class="button"
+                onclick="calculate_tour()">
+        </form>
+    </main>
+</body>
+
+</html>
