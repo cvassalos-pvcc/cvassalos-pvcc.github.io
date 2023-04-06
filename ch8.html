@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Chapter 7: Terms & Information</title>
+    <meta charset="UTF-8">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #4D4D4D;
+            color: #FFBF9B;
+            line-height: 1.4em;
+            font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            line-height: 2em;
+            font-size: 36px;
+        }
+
+        h2 {
+            text-align: center;
+            font-weight: 900;
+            letter-spacing: 0.2rem;
+            font-size: 24px;
+        }
+
+        main {
+            width: 75%;
+            display: block;
+            margin: auto;
+            line-height: 1.5em;
+            background-color: rgba(249, 245, 235, 70%);
+            color: #002B5B;
+            padding: 2em;
+        }
+
+        li {
+            padding: 2em;
+        }
+
+        li:nth-child(odd) {
+            width: 65%;
+            background-color: #B46060;
+        }
+
+        li:nth-child(even) {
+            width: 55%;
+            background-color: #FFBF9B;
+
+        }
+
+        .sten-image {
+            margin: 2em;
+            padding: 2em;
+            border: solid;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="title-border">
+    <h1>Chapter 8: Information Security</h1>
+    <h2>Constantinos Vassalos</h2>
+</div>
+
+<main>
+
+    <h3>Briefly describe or define:</h3>
+    <ol>
+        <li>information security - protecting data from those who don't have permission to access it</li>
+        <li>authentication - verifying that a user has permission to access a particular device, whether it be a local machine, or remote</li>
+        <li>dual authentication - after entering log-in credentials, a second device will receive a temporary code that must be entered to gain access</li>
+        <li>social engineering - the process of using people to get the information you want</li>
+        <li>virus - a program that infects a computer and spreads to others, similar to a biological virus</li>
+        <li>Trojan horse - a program that does a legitimate computational task, but also contains malicious code to infect a computer unbeknownst to the user</li>
+        <li>ransomware - malicious code, usually downloaded by email, that will strongly encrypt files on the computer and then demand payment from the user for the files to be decrypted</li>
+        <li>
+            phishing - not a direct attack on a computer, typically it is someone trying to get a user's personal information, financial information or social security number, via an email
+             that appears to be from a legitimate organization</li>
+        <li>White Hat - security experts that are trying to keep users safe from malicious attacks</li>
+        <li>Black Hat - security experts that attempt to exploit users through malicious attacks</li>
+        <li>
+            encryption/decryption - encryption is the process of using an algorithm to convert information into a representation that cannot be understood or utilized
+            by anyone until it is decrypted, which is the reverse, using an algorithm to convert the ciphertext back into plain-text
+        </li>
+        <li>cryptography - the science of "secret writing"</li>
+        <li>
+            symmetric encryption algorithim - requires the use of a secret key known both to sender and receiver, the sender encrypts the file with this secret key, and the reciever user
+            uses the same secret key to decrypt the file
+        </li>
+        <li>Caesar cipher - also called a shift cipher, it involves shifting character in a message to another character some fixed distance further along in the alphabet/li>
+        <li>block cipher - a method of encrypting data in blocks to produce ciphertext using a cryptographic key and algorithm</li>
+        <li>Data Encryption Standard (DES) - developed by IBM in the 70's, it is a certified as an international standard used for encrypting data</li>
+        <li>public key system - an asymmetrical encryption algorithm, the encryption key for a messages goes to everyone, but only the receiver of the message gets the decryption key</li>
+        <li>embedded computers - computational devices such as chips, processors, or computers that are embedded within another system</li>
+    </ol>
+
+    <div class="sten-image">
+        <h3>Briefly describe how a text file can be hidden in a steganographic image:</h3>
+        <p>
+            You can hide a text file in an image using the RGB values. Each color, red, green, and blue, has 8 bits allocated to them to manipulate the intensity of the color. A user can change the last
+            bit in each color to convey a message, and because it is the smallest bit it will change the color by 1/256th, which is not noticeable at all.  
+        </p>
+    </div>
+
+    <h3>List six ways to protect yourself from most cyber attacks</h3>
+    <ol>
+        <li>Be sure your computer has up-to-date antivirus software.</li>
+        <li>Be sure your computer has up-to-date firewall software.</li>
+        <li>Be sure your computer has up-to-date antispyware.</li>
+        <li>Set your browswer to use a pop-up blocker.</li>
+        <li>Always install the latest security patches or updates to your operating system.</li>
+        <li>Do not send personal or financial information in response to any email.</li>
+    </ol>
+
+</main>
+
+</body>
+
+</html>
