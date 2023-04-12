@@ -1,0 +1,315 @@
+`<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Chapter 9 & 10</title>
+    <meta charset="UTF-8">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #263A29;
+            color: #F2E3DB;
+            line-height: 1em;
+            font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
+        }
+
+        h1{
+            color: #E86A33;
+            text-align: center;
+            line-height: 2em;
+            font-size: 36px;
+        }
+
+        h2 {
+            text-align: center;
+            font-weight: 900;
+            letter-spacing: 0.2rem;
+            font-size: 24px;
+        }
+
+        h3 {
+            text-align: center;
+            letter-spacing: 02.rem;
+            color: #41644A;
+            font-weight: 900;
+        }
+
+        main {
+            width: 75%;
+            display: block;
+            margin: auto;
+            line-height: 1.5em;
+            background-color: rgba(249, 245, 235, 70%);
+            color: #E86A33;
+            padding: 2em;
+        }
+
+        li {
+            padding: 2em;
+            width: 60%;
+            background-color: #41644A;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: black;
+            padding: 2em;
+        }
+
+        thead {
+            font-size: 24px;
+        }
+
+
+        table, th, td {
+            border: 1px solid;
+            padding: 1em;
+        }
+
+        .ch9 li{
+            display: block;
+            margin: auto;
+            padding: 1em;
+        }
+
+        .q-a li {
+            display: block;
+            margin: auto;
+        }
+        .q-a > li:nth-child(odd)::before {
+            content: "Q) ";
+            text-decoration: none;
+        }
+
+        .q-a > li:nth-child(even)::before {
+            content: "A) ";
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Chapter 9 & 10</h1>
+    <h2>Constantinos Vassalos</h2>
+
+<main>
+    <div class="ch9">
+    <h2>Chapter 9: Introduction to High Level Languages</h2>
+
+    <h3>List four disadvantages of using assembly language:</h3>
+        <ol>
+            <li>The programmer must "manually" manage the movement of data items bewteen and among memory locations and registers (although such data items can be assigned mnemonic names).</li>
+            <li>The programmer must take a microscopic view of a task, breaking it down into tiny subtasks-ADD, COMPARE, INCREMENT-that direct what is going on in individual memory locations and registers.</li>
+            <li>An assembly language program is machine specific.</li>
+            <li>Statements are not natural-language-like (although operations are given mnemonic code words as an improvement over a string of bits).</li>
+        </ol>
+
+    <h3>List four expectations programmers have for writing programs in a high-level language ("third generation" language):</h3>
+        <ol>
+            <li>The programmer need not manage the details of the movement of data items within memory or pay any attention to exactly where those items are stored.</li>
+            <li>The programmer can take a macroscopic view of tasks, thinking at a higher level of problem solving (add B and C, and call the result A). The "primitive operations" used as building blocks in algorithm construction can be larger.</li>
+            <li>Programs are portable rather than machine specific.</li>
+            <li>Programming statements are closer to natural language and use standard mathematical notation.</li>
+        </ol>
+    
+    <h3>Briefly describe or define:</h3>
+        <ol>
+            <li>object code - assembly language instructions translated into binary machine language instructions</li>
+            <li>source code - high level language instructions</li>
+            <li>procedural language - a type of computer programming language that specifies a series of well-structured steps and procedures within its programming context to compose a program</li>
+            <li>Integrated Development Environment (IDE) - a software application that helps a user to write code</li>
+            <li>software development life cycle - the multiple steps it takes to create a fully functional piece of software</li>
+            <li>waterfall model of software development - a project being broken into numerous parts and completing them sequentially</li>
+            <li>agile model of software development - problem specifications are never a "done-deal", so developers must be quick and ready to fix and/or change any code in the project</li>
+        </ol>
+
+    <h3>Describe each of these components of the software development life cycle:</h3>
+        <ol>
+            <li>feasibility study - evaluates a proposed project and compares the  costs and benefits of various solutions</li>
+            <li>problem specification - developing a clear, concise, and unambiguous statement of the exact problem the software is to solve</li>
+            <li>program design - planning how the program is going to the solve the exact problem</li>
+            <li>algorithm selection - once the various subtasks have been identified, algorithms must be found to carry them out</li>
+            <li>coding - the process of c onverting the detailed designs into computer code</li>
+            <li>debugging - the process of locating and correcting program errors</li>
+            <li>testing - testing and benchmarking the code throughout the softwares development to make sure there are no errors and everything is working as intended</li>
+            <li>verification - can be used to prove that if the input data to a program satisfies certain conditions, then, after the program has been run on this data, the output data satisfies certain other conditions</li>
+            <li>documentation</li>
+        </ol>
+    </div>
+
+    <div class="q-a">
+    <h2>Chapter 10: Tower of Babel: Programming Languages</h2>
+
+    <h3>Questions & Answers:</h3>
+        <ul>
+            <li>Why does the textbook refer to "the Tower of Babel" regarding computer languages?</li>
+            <li>Similar to the when the Tower of Babel fell, instead of there being just one computer language, there are numerous computer languages</li>
+
+            <li>Why isn't there just one computer programming language?</li>
+            <li>The way computer programming languages are designed, some are better for a particular thing, such as accomplishing a certain type of program, or using the smallest amount of memory</li>
+
+            <li>Why didn't FORTRAN use the less than ( < ) symbol when comparing two numbers?</li>
+            <li>Because the way data was fed to the FORTRAN machines was via punch cards, and in that time there was no "<" for punch cards</li>
+
+            <li>What was COBOL designed for?</li>
+            <li>"Common Business-Oriented Language" was designed to be a language for managers to use in business for such things as managing inventories and payrolls</li>
+
+            <li>What was the language C designed for?</li>
+            <li>It was orginally designed to write the operating language UNIX</li>
+
+            <li>What is the difference between C and C++?</li>
+            <li>C++ is the same as C but with many new features, the most significant one being the ability to do object-oriented programming</li>
+
+            <li>Who or what is the language Ada named for, and why?</li>
+            <li>The language Ada was named after Ada Augusta Byron Lovelace, the daughter of the poet Lord Byron and later the wife of Lord Lovelace</li>
+
+            <li>What is a Java "applet"?</li>
+            <li>Java applets are small programs designed to run from webpages</li>
+
+            <li>How much does Python cost to download, install, and use?</li>
+            <li>Python is a free language and tool available to everyone that wants to code</li>
+
+            <li>What is Microsoft.NET?</li>
+            <li>This is the .NET Framework Microsoft created to support their programming languages, it is a large collection of tools for software development</li>
+
+            <li>What is SQL, and what is it used for?</li>
+            <li>SQL (Structered Query Language) is a specialized languange to be used with databases</li>
+
+            <li>What is R and what is it used for?</li>
+            <li>R is a specialized programming language designed for statistical computing and graphics</li>
+
+            <li>What is Go (or golang), and what is it used for?</li>
+            <li>Go is a programming language developed by Google, designed for the purpose of writing all of Googles services in one language</li>
+
+            <li>What is Swift, and what is it used for?</li>
+            <li>Swift is a programming language developed by Apple, designed to build apps and software for Apple's operating systems, iOS and macOS</li>
+        </ul>
+
+        <h3>Briefly describe each of the following alternative programming paradigms</h3>
+        <ol>
+            <li>functional programming - building software using only functions, and explicitly explaining each step to the computer to solve the problem`</li>
+            <li>logic programming - uses functions like functional programming, but builds on it by using logic to decide what to do instead of explicitly explaining step-by-step what to do</li>
+            <li>parallel programming - the most complex of programming, it allows the user to run multiple parts of a program in multiple places</li>
+        </ol>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="5">Computer Programming Language Comparisons</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Language</td>
+                <td>Comments</td>
+                <td>Input statement(s)</td>
+                <td>Increase by 1</td>
+                <td>Output statement</td>
+            </tr>
+            <tr>
+                <td>1. Ada</td>
+                <td>--</td>
+                <td>TEXT_IO.PUT<br />INT_IO.GET</td>
+                <td>n:=n+1</td>
+                <td>TEXT_IO.PUT</td>
+            </tr>
+            <tr>
+                <td>2. C++</td>
+                <td>//</td>
+                <td>cin >> n;</td>
+                <td>n = n + 1;</td>
+                <td>cout << n;</td>
+            </tr>
+            <tr>
+                <td>3. C#</td>
+                <td>//</td>
+                <td>n = Convert.ToInt32(Console.ReadLine());</td>
+                <td>n = n + 1;</td>
+                <td>Console.WriteLine(n);</td>
+            </tr>
+            <tr>
+                <td>4. Java</td>
+                <td>//</td>
+                <td>n = inp.nextInt();</td>
+                <td>n = n + 1;</td>
+                <td>System.out.println(n);</td>
+            </tr>
+            <tr>
+                <td>5. Python</td>
+                <td>#</td>
+                <td>n = int(input())</td>
+                <td>n = n + 1</td>
+                <td>print(n)</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Stack Overflow Q&A</h3>
+    <ul class="q-a">
+        <li>What is the purpose of Stack Overflow?</li>
+        <li>Stack Overflow helps people find the answers they need, when they need them. We're best known for our public Q&A platform that over 100 million people visit every month to ask questions, learn, and share technical knowledge.</li>
+        <li>What is a line of code or code snippet (small chunk of code) to do this?</li>
+        <li>background-color: transparent;</li>
+        <li>What should a Stack Overflow question <u>title</u> do?</li>
+        <li>Write a title that summarizes the specific problem</li>
+        <li>What are the steps to writing a good Stack Overflow question?</li>
+        <li>
+            <ol>
+                <li>Make sure your question is on-topic and suitable for this site</li>
+                <li>Search, and research</li>
+                <li>Write a title that summarizes the specific problem</li>
+                <li>Introduce the problem before you post any code</li>
+                <li>Help others reproduce the problem</li>
+                <li>Include all relevant tags</li>
+                <li>Proofread before posting</li>
+                <li>Respond to feedback after posting</li>
+                <li>Look for help asking for help</li>
+            </ol>
+        </li>
+        <li>How many people answered the 2021 survey?</li>
+        <li>Over 80,000 developers</li>
+        <li>What were the top three countries where responses came from?</li>
+        <li>
+            <ul>
+                <li>USA - 18.33%</li>
+                <li>India - 12.61%</li>
+                <li>Germany - 6.75%</li>
+            </ul>
+        </li>
+        <li>What was the age range of coders when they wrote their first line of code?</li>
+        <li>11 to 17 years old</li>
+        <li>What were the three most popular wasy of learning how to code?</li>
+        <li>
+            <ul>
+                <li>Other online resources (videos, blogs, etc) - 59.53%</li>
+                <li>School - 53.59%</li>
+                <li>Books / Physical media - 51.53%</li>
+            </ul>
+        </li>
+        <li>How long have most people been coding?</li>
+        <li>5 to 9 years</li>
+        <li>What percentage of coders identified as male?</li>
+        <li>91.67%</li>
+        <li>How can the IT community get more women in coding?</li>
+        <li>Be as inclusive as possible</li>
+        <li>What were the top three programming languages?</li>
+        <li>
+            <ul>
+                <li>JavaScript - 64.96%</li>
+                <li>HTML/CSS - 56.07%</li>
+                <li>Python - 48.24%</li>
+            </ul>
+        </li>
+    </ul>
+</main>
+
+</body>
+
+</html>
