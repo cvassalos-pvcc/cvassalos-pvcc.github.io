@@ -1,0 +1,173 @@
+`<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Chapter 12 & 13</title>
+    <meta charset="UTF-8">
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #182747;
+        }
+        main {
+            background-color: #562B08;
+            width: 75%;
+            display: block;
+            margin: auto;
+        }
+        h1, h2, h3 {
+            color: #647E68;
+            text-align: center;
+        }
+        h1 {
+            font-size: 4em;
+        }
+
+        li {
+            color: #D8D8D8;
+            padding: 1em;
+        }
+        iframe {
+            display: block;
+            margin: auto;
+            padding: 1.5em;
+        }
+        dl {
+            widtH: 80%;
+            display: block;
+            margin: auto;
+        }
+        dt {
+            color: #647E68;
+        }
+        dd {
+            color: #D8D8D8;
+        }
+        .wrapper {
+            display: block;
+            margin: auto;
+            width:75%;
+        }
+        .question-answer {
+            background-color: #182747;
+            margin: 1em auto;
+            padding: 2em;
+            width:30%;
+            display: inline-block;
+            border-radius: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Chapter 12 & 13</h1>
+    <h2>Constantinos Vassalos</h2>
+
+<main>
+    <div class="ch9">
+    <h2>Chapter 12: Models of Computation</h2>
+
+    <h3>What is the purpose of a model?</h3>
+    <div class="wrapper">
+        <ol>
+            <li>The purpose of a model is to create a replica of some physical, social, scientific, or mathematical phenomena, and to use the replica to study what would likely happen in said situation.</li>
+            <li>List four phenomena of a model:
+                <ol type="a">
+                    <li>Captures the essence-the important properties-of the real thing</li>
+                    <li>Probably differs in scale from the real thing</li>
+                    <li>Omits some of the details of the real thing</li>
+                    <li>Lacks the full functionality of the real thing</li>
+                </ol>
+            </li>
+            <li>List four thins a computing agent should be able to do:
+                <ol type="a">
+                    <li>Accept input</li>
+                    <li>Store information in memory and retrieve it from memory</li>
+                    <li>Take actions according to algorithm instructions; the choice of what action to take may depend on the present state of the
+                        computing agent, as well as on the input item presently being processed
+                    </li>
+                    <li>Produce output</li>
+                </ol>
+            </li>
+            <li>List four characteristics of an algorithm:
+                <ol type="a">
+                    <li>Be well-ordered collection</li>
+                    <li>Consist of unambiguous and effectively computable operations</li>
+                    <li>Halt in a finite amount of time</li>
+                    <li>Produce a result</li>
+                </ol>
+            </li>
+            <li>What is the "halting problem" with regards to an uncomputable problem?</li>
+        </ol>
+
+    <h2>Chapter 13: Simulation & Modeling</h2>
+
+    <h3>Define these terms:</h3>
+    <ol>
+        <li>scientific method - observing the behavior of a system and formulating a hypothesis that tries to understand and explain that behavior</li>
+        <li>computational model - also known as a simulation model, a computational model uses mathematical equations and/or algorithmic procedures to capture
+            the fundamental properties and behaviors of a system
+        </li>
+        <li>descrete event simulation - modeling the behavior of a system only at an explicit and finite set of times</li>
+        <li>List and describe seven reasons to construct a simulation model
+            <ol>
+                <li>Existence - the system might not yet exist, so it is not possible to experiment directly on the actual system. In fact, we might
+                    be using a model to help us with the construction of the system
+                </li>
+                <li>Physical realization - the system in not contructed from entities that can be represented by physical objects. For example, it may be a 
+                    social system that can only be simulated on a computer
+                </li>
+                <li>Safety - it might be too dangerous to experiment on the actual system or a physical replica.</li>
+                <li>Speed of contruction - it might take too much time to construct a physical model. Sometimes it is faster to design and build a computer simulation.</li>
+                <li>Time scale - some physical systems change too slowly or too quickly.</li>
+                <li>Ethical behavior - some physical models have serious moral and thical consequences, perhaps the best known being the use of animals in medical research.
+                    In this case, a computational model could eliminate a great deal of suffering.
+                </li>
+                <li>Ease of modification - if we are not happy with the design of a physical model, we neet to construct a brand-new one. In a simulation, we only need
+                    to change some numerical parameters and rerun the existing model.
+                </li>
+            </ol>
+        </li>
+    </ol>
+</div>
+    <h3>Illustris: "The Mother of All Computations"</h3>
+    <dl>
+        <div class="question-answer">
+            <dt>What is Illustris?</dt>
+            <dd>A model created by a research group that claims to be the most detailed and realistic computer simulation ever built to study the formation of the universe,
+                starting with the Big Bang, and leading up to current time.</dd>
+        </div>
+        <div class="question-answer">
+            <dt>What fields of science were involved in the Illustris computational model?</dt>
+            <dd>The Illustris computional model uses physics, astronomy, hydrogynamics, chemistry, and mathematics.</dd>
+        </div>
+        <div class="question-answer">
+            <dt>What does Illustris simulate?</dt>
+            <dd>It simulates the expansion of galaxies, the gravitational pull of matter, the formation of stars and black holes, and the motions of cosmic gases.</dd>
+        </div>
+        <div class="question-answer">
+            <dt>How long did the project take?</dt>
+            <dd>It took five years of development, including three months of nonstop parallel computing.</dd>
+        </div>
+        <div class="question-answer">
+            <dt>How many years of gallactic evolution are simulated in Illustris?</dt>
+            <dd>Illustris simulates 14 billion years of the galaxy.</dd>
+        </div>
+        <div class="question-answer">
+            <dt>Illustris was created using two supercomputers. What is a supercomputer?</dt>
+            <dd>A supercompter is a specialized computer, which involves having thousands of processors, in order to make billions, trillions, or even sextillions of operations.</dd>
+        </div>
+    </dl>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/NjSFR40SY58" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+     encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+    </iframe>
+</main>
+
+</body>
+
+</html>
