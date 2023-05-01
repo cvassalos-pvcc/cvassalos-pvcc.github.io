@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang = "en">
+<!-- Name: Constantinos Vassalos -->
+<!-- Program Purpose: This is a program that will calculate a tip amount based on the quality of service -->
+<head>
+    <script type = "text/javascript">
+        function calculate_tuition() {
+            //constants & variables
+            const dollar = new Intl.NumberFormat('en-US', {style: 'currency', currency: 'USD'});
+            var num_credits = 0;
+            var tuition_total = 0;
+            var institutional_fee = 0;
+            var student_activity_fee = 0;
+            var tuition_total = 0;
+
+            // Retrieve the user data from the form, and assign the data to input variables
+            num_credits = document.getElementById('number_credits').value;
+
+            // if user does not enter a bill amount, display an error message
+            if (num_credits == '') {
+                alert("Please enter how many credits you will be taking: ");
+                return;
+            }
+
+            // calculate the total & display the result
+            tuition_total = num_credits * 155;
+            document.getElementById('tuition').value = dollar.format(tuition_total);
+
+            institutional_fee = num_credits * 1.75;        
+            document.getElementById('institutional').value = dollar.format(institutional_fee);
+
+            student_activity_fee = num_credits * 2.90;            
+            document.getElementById('student_activity').value = dollar.format(student_activity_fee);
+
+            total = tuition_total + institutional_fee + student_activity_fee;            
+            document.getElementById('total').value = dollar.format(total);
+        }
+    </script>
+
+    <style>
+        body {background-color: #2C3639; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+        h2 {text-align: center;}
+        table {width: 500px; color: #000000; background-color: #A27B5C; border: none; font-weight: bold;}
+        td {text-align: right; padding: 10px;}
+        input {width: 150px; font-weight: bold; background-color: #DCD7C9;}
+        input, select {width: 80%; border: none; border-bottom: 1px solid #000000; padding: 10px;}
+        form {display: flex; justify-content: center; margin-top: 2em;}
+        .button:hover {background-color: white;}
+    </style>
+</head>
+<body>
+    <form>
+        <table>
+            <tr><td colspan="2"><h2>PVCC TUITION AND FEES CALCULATOR</h2></td></tr>
+            <tr>
+                <td>Number of Credits: </td>
+                <td><input type="text" id="number_credits" placeholder="credits here" /></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="button" value="Calculate Tuition and Fees" 
+                    class="button" onclick="calculate_tuition()" />
+                </td>
+            </tr>
+            <tr>
+                <td><input class="button" type="reset"></td>
+            </tr>
+            <tr style="font-weight: bold; font-size: 1.2em; text-align: left;">
+                <td>Tuition: </td>
+                <td><input type="text" id='tuition' placeholder="0" /></td>
+            </tr>
+            <tr style="font-weight: bold; font-size: 1.2em; text-align: left;">
+                <td>Institutional Fee: </td>
+                <td><input type="text" id='institutional' placeholder="0" /></td>
+            </tr>
+            <tr style="font-weight: bold; font-size: 1.2em; text-align: left;">
+                <td>Student Activity Fee: </td>
+                <td><input type="text" id='student_activity' placeholder="0" /></td>
+            </tr>
+            <tr>
+                <td>TOTAL: </td>
+                <td><input type="text" id='total' placeholder="0" /></td>
+            </tr>
+
+
+            
+        </table>
+    </form>
+</body>
+</html>
